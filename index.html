@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ════════════════════════════════════════
+       SEO META TAGS — this is what you learned
+       from auditing Solid Power. Every tag here
+       has a purpose. No stuffing, no filler.
+  ════════════════════════════════════════ -->
+
+  <!-- Title tag: your name + role + location. Clear, specific, searchable -->
+  <title>Prakriti Baral | SEO Content Writer & Digital Marketing Specialist — Pokhara, Nepal</title>
+
+  <!-- Meta description: under 155 chars, includes role, what you do, CTA -->
+  <meta name="description" content="Prakriti Baral is an SEO Content Writer and Digital Marketing Specialist from Pokhara, Nepal. She helps businesses rank and grow through content, technical SEO, and GBP management." />
+
+  <!-- Author tag — simple, just your name -->
+  <meta name="author" content="Prakriti Baral" />
+
+  <!-- Canonical — tells Google this is the one true URL for this page -->
+  <link rel="canonical" href="https://prakriti-baral.com.np/" />
+
+  <!-- Robots — index this page and follow all links on it -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph — controls how your page looks when shared on Facebook, LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prakriti-baral.com.np/" />
+  <meta property="og:title" content="Prakriti Baral | SEO Content Writer & Digital Marketing Specialist" />
+  <meta property="og:description" content="Helping businesses rank and grow through content, technical SEO, and GBP management. Based in Pokhara, Nepal." />
+  <meta property="og:image" content="https://prakriti-baral.com.np/og-image.jpg" />
+
+  <!-- Twitter Card — controls how your link looks on X/Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prakriti Baral | SEO Content Writer" />
+  <meta name="twitter:description" content="SEO Content Writer & Digital Marketing Specialist from Pokhara, Nepal." />
+
+  <!-- ════════════════════════════════════════
+       SCHEMA MARKUP — structured data for Google
+       This tells Google you are a Person, not
+       just a random webpage. This is what was
+       MISSING from Solid Power's website.
+  ════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prakriti Baral",
+    "jobTitle": "SEO Content Writer & Digital Marketing Specialist",
+    "url": "https://prakriti-baral.com.np",
+    "email": "baralprakriti1@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pokhara",
+      "addressCountry": "Nepal"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/prakriti-baral-467284281"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Lumino Technology Pvt. Ltd."
+    },
+    "knowsAbout": ["SEO", "Content Writing", "Google Business Profile", "Digital Marketing", "Technical SEO"]
+  }
+  </script>
+
+  <!-- Google Fonts — Playfair Display for headings (editorial, distinctive),
+       DM Sans for body text (clean, readable) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ════════════════════════════════════════
+       CSS VARIABLES — change one value here,
+       it updates everywhere on the page.
+       This is what makes design consistent.
+    ════════════════════════════════════════ */
+    :root {
+      --cream:    #FAF8F4;
+      --cream-2:  #F2EDE4;
+      --ink:      #1A1714;
+      --ink-2:    #3D3730;
+      --ink-3:    #7A7268;
+      --teal:     #1D7A6B;
+      --teal-l:   #E8F5F2;
+      --teal-m:   #C5E8E2;
+      --gold:     #C4973A;
+      --gold-l:   #FBF4E8;
+      --border:   #E2DAD0;
+      --radius:   14px;
+      --radius-sm:8px;
+      --ff-head:  'Playfair Display', Georgia, serif;
+      --ff-body:  'DM Sans', system-ui, sans-serif;
+      --shadow:   0 2px 20px rgba(26,23,20,0.07);
+      --shadow-lg:0 8px 48px rgba(26,23,20,0.12);
+    }
+
+    /* ════════════════════════════════════════
+       RESET — remove browser default styles
+       so everything looks the same everywhere
+    ════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--ff-body);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ════════════════════════════════════════
+       LAYOUT HELPERS
+    ════════════════════════════════════════ */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+    .section { padding: 96px 0; }
+    .section-sm { padding: 64px 0; }
+
+    /* ════════════════════════════════════════
+       SECTION LABELS — the small uppercase text
+       above every section heading
+    ════════════════════════════════════════ */
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: var(--teal-l);
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+
+    /* ════════════════════════════════════════
+       TYPOGRAPHY
+    ════════════════════════════════════════ */
+    h1, h2, h3 { font-family: var(--ff-head); line-height: 1.2; color: var(--ink); }
+    h1 { font-size: clamp(42px, 7vw, 80px); font-weight: 900; }
+    h2 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; }
+    h3 { font-size: 20px; font-weight: 700; }
+    p  { color: var(--ink-2); line-height: 1.75; }
+
+    /* ════════════════════════════════════════
+       BUTTONS
+    ════════════════════════════════════════ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 28px; border-radius: 50px;
+      font-family: var(--ff-body); font-size: 14px; font-weight: 600;
+      cursor: pointer; border: none; transition: all 0.25s ease;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--ink); color: var(--cream);
+    }
+    .btn-primary:hover { background: var(--teal); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(29,122,107,0.3); }
+    .btn-outline {
+      background: transparent; color: var(--ink);
+      border: 1.5px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--ink); transform: translateY(-2px); }
+
+    /* ════════════════════════════════════════
+       NAVIGATION
+    ════════════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(250,248,244,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 28px;
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--ff-head); font-size: 20px; font-weight: 900;
+      color: var(--ink); letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 36px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: var(--ink-3);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+
+    /* ════════════════════════════════════════
+       HERO SECTION
+       This is the first thing people see.
+       H1 = your name (most important heading)
+    ════════════════════════════════════════ */
+    .hero {
+      padding: 160px 0 96px;
+      position: relative; overflow: hidden;
+    }
+    /* Decorative background circle */
+    .hero::before {
+      content: '';
+      position: absolute; top: -200px; right: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, var(--teal-m) 0%, transparent 65%);
+      opacity: 0.4; border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 60px; align-items: center;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 500; color: var(--ink-3);
+      background: var(--cream-2); border: 1px solid var(--border);
+      padding: 6px 16px; border-radius: 50px; margin-bottom: 28px;
+    }
+    .hero-tag span { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); display: inline-block; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+
+    /* H1 — your name. One H1 per page is an SEO rule. */
+    .hero h1 { margin-bottom: 10px; letter-spacing: -2px; }
+    .hero h1 em { font-style: italic; color: var(--teal); }
+    .hero-title {
+      font-size: clamp(16px, 2vw, 20px); font-weight: 400;
+      color: var(--ink-3); margin-bottom: 28px;
+      font-family: var(--ff-body);
+    }
+    .hero-bio {
+      font-size: 17px; line-height: 1.8; color: var(--ink-2);
+      max-width: 580px; margin-bottom: 40px;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* Profile photo */
+    .hero-photo-wrap {
+      position: relative; flex-shrink: 0;
+    }
+    .hero-photo {
+      width: 280px; height: 340px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 4px solid var(--cream-2);
+      box-shadow: var(--shadow-lg);
+      background: var(--cream-2);
+      position: relative;
+    }
+    .hero-photo img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    /* Photo placeholder — replace src with your real photo */
+    .photo-placeholder {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 10px; color: var(--ink-3);
+      font-size: 13px; text-align: center; padding: 20px;
+    }
+    .photo-placeholder svg { opacity: 0.3; }
+    /* Floating badge on photo */
+    .hero-badge {
+      position: absolute; bottom: -16px; left: -16px;
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 12px 16px;
+      box-shadow: var(--shadow);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .badge-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: var(--teal-l); display: flex;
+      align-items: center; justify-content: center;
+    }
+    .badge-text { font-size: 12px; font-weight: 600; color: var(--ink); line-height: 1.3; }
+    .badge-sub { font-size: 11px; color: var(--ink-3); font-weight: 400; }
+
+    /* Stats row */
+    .hero-stats {
+      display: flex; gap: 40px; margin-top: 56px;
+      padding-top: 40px; border-top: 1px solid var(--border);
+    }
+    .stat-num {
+      font-family: var(--ff-head); font-size: 32px; font-weight: 900;
+      color: var(--ink); line-height: 1;
+    }
+    .stat-lbl { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+
+    /* ════════════════════════════════════════
+       ABOUT SECTION
+    ════════════════════════════════════════ */
+    .about { background: white; }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+    }
+    .about-text h2 { margin-bottom: 20px; }
+    .about-text p { margin-bottom: 16px; font-size: 16px; }
+    .four-pillars {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+      margin-top: 32px;
+    }
+    .pillar {
+      padding: 16px 18px; border-radius: var(--radius);
+      border: 1px solid var(--border); background: var(--cream);
+      transition: all 0.2s;
+    }
+    .pillar:hover { border-color: var(--teal); transform: translateY(-2px); }
+    .pillar-num {
+      font-family: var(--ff-head); font-size: 28px; font-weight: 900;
+      color: var(--teal-m); line-height: 1; margin-bottom: 6px;
+    }
+    .pillar-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+    .pillar-desc { font-size: 12px; color: var(--ink-3); margin-top: 3px; }
+
+    /* Timeline / experience card */
+    .experience-card {
+      background: var(--ink); color: var(--cream);
+      border-radius: 24px; padding: 36px;
+    }
+    .exp-company {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--teal-m); margin-bottom: 10px;
+    }
+    .exp-role {
+      font-family: var(--ff-head); font-size: 22px; font-weight: 700;
+      color: white; margin-bottom: 6px;
+    }
+    .exp-period { font-size: 13px; color: rgba(250,248,244,0.5); margin-bottom: 20px; }
+    .exp-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .exp-list li {
+      display: flex; gap: 10px; font-size: 14px;
+      color: rgba(250,248,244,0.8); line-height: 1.5;
+    }
+    .exp-list li::before {
+      content: '→'; color: var(--teal-m); flex-shrink: 0; margin-top: 1px;
+    }
+
+    /* ════════════════════════════════════════
+       SKILLS SECTION
+    ════════════════════════════════════════ */
+    .skills { background: var(--cream); }
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px; margin-top: 48px;
+    }
+    .skill-card {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+      transition: all 0.25s;
+    }
+    .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--teal); }
+    .skill-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--teal-l); display: flex; align-items: center;
+      justify-content: center; margin-bottom: 18px; font-size: 22px;
+    }
+    .skill-card h3 { font-size: 16px; margin-bottom: 10px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .skill-tag {
+      font-size: 11.5px; padding: 3px 10px; border-radius: 20px;
+      background: var(--cream-2); color: var(--ink-2); font-weight: 500;
+      border: 1px solid var(--border);
+    }
+
+    /* ════════════════════════════════════════
+       BLOGS SECTION
+       These are YOUR published articles.
+       Each card links to the live article.
+    ════════════════════════════════════════ */
+    .blogs { background: white; }
+    .blogs-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-end; margin-bottom: 48px;
+    }
+    .blogs-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px;
+    }
+    .blog-card {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; transition: all 0.25s; background: var(--cream);
+      display: flex; flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--teal); }
+    .blog-card-top {
+      padding: 24px 24px 20px;
+      flex: 1; display: flex; flex-direction: column;
+    }
+    .blog-date {
+      font-size: 12px; color: var(--ink-3); font-weight: 500;
+      margin-bottom: 12px; display: flex; align-items: center; gap: 6px;
+    }
+    .blog-date::before { content:''; display:inline-block; width:20px; height:1px; background:var(--border); }
+    .blog-card h3 {
+      font-size: 17px; line-height: 1.4; margin-bottom: 12px;
+      flex: 1;
+    }
+    .blog-card p { font-size: 13.5px; color: var(--ink-3); line-height: 1.6; }
+    .blog-card-footer {
+      padding: 16px 24px;
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .read-link {
+      font-size: 13px; font-weight: 600; color: var(--teal);
+      display: flex; align-items: center; gap: 6px; transition: gap 0.2s;
+    }
+    .blog-card:hover .read-link { gap: 10px; }
+
+    /* ════════════════════════════════════════
+       PROJECTS SECTION
+    ════════════════════════════════════════ */
+    .projects { background: var(--cream); }
+    .projects-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 28px; margin-top: 48px;
+    }
+    .project-card {
+      background: white; border: 1px solid var(--border);
+      border-radius: 20px; overflow: hidden; transition: all 0.25s;
+    }
+    .project-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .project-card-top {
+      padding: 32px; border-bottom: 1px solid var(--border);
+    }
+    .project-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--teal);
+      background: var(--teal-l); padding: 4px 12px;
+      border-radius: 20px; display: inline-block; margin-bottom: 18px;
+    }
+    .project-card h3 { font-size: 22px; margin-bottom: 12px; }
+    .project-card p { font-size: 14.5px; color: var(--ink-3); line-height: 1.7; }
+    .project-tech {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px;
+    }
+    .tech-tag {
+      font-size: 12px; padding: 4px 12px; border-radius: 20px;
+      background: var(--cream-2); color: var(--ink-2);
+      border: 1px solid var(--border); font-weight: 500;
+    }
+    .project-card-footer {
+      padding: 20px 32px;
+      display: flex; align-items: center; gap: 14px;
+    }
+
+    /* ════════════════════════════════════════
+       CONTACT SECTION
+    ════════════════════════════════════════ */
+    .contact {
+      background: var(--ink); color: var(--cream);
+      position: relative; overflow: hidden;
+    }
+    .contact::before {
+      content: '';
+      position: absolute; bottom: -300px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, var(--teal) 0%, transparent 60%);
+      opacity: 0.15; border-radius: 50%;
+    }
+    .contact-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+    .contact h2 { color: white; margin-bottom: 18px; }
+    .contact p { color: rgba(250,248,244,0.65); font-size: 17px; margin-bottom: 40px; }
+    .contact-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .contact-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 28px; border-radius: 50px;
+      font-size: 14px; font-weight: 600; transition: all 0.2s;
+      cursor: pointer; text-decoration: none;
+    }
+    .contact-btn-primary {
+      background: var(--teal); color: white;
+    }
+    .contact-btn-primary:hover { background: #25a090; transform: translateY(-2px); }
+    .contact-btn-outline {
+      background: transparent; color: var(--cream);
+      border: 1.5px solid rgba(250,248,244,0.2);
+    }
+    .contact-btn-outline:hover { border-color: var(--cream); transform: translateY(-2px); }
+
+    /* ════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════ */
+    footer {
+      background: var(--ink); border-top: 1px solid rgba(250,248,244,0.08);
+      padding: 28px; text-align: center;
+    }
+    footer p { font-size: 13px; color: rgba(250,248,244,0.35); }
+
+    /* ════════════════════════════════════════
+       ANIMATIONS — elements fade in as they load
+    ════════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-tag    { animation: fadeUp 0.5s ease both; }
+    .hero h1     { animation: fadeUp 0.5s ease 0.1s both; }
+    .hero-title  { animation: fadeUp 0.5s ease 0.2s both; }
+    .hero-bio    { animation: fadeUp 0.5s ease 0.3s both; }
+    .hero-actions{ animation: fadeUp 0.5s ease 0.4s both; }
+    .hero-stats  { animation: fadeUp 0.5s ease 0.5s both; }
+    .hero-photo-wrap { animation: fadeUp 0.6s ease 0.2s both; }
+
+    /* ════════════════════════════════════════
+       RESPONSIVE — mobile friendly
+    ════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-photo-wrap { display: none; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .blogs-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .four-pillars { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 480px) {
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVIGATION
+       Fixed to top. Logo = PB (your initials).
+       Links scroll to each section.
+  ════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">Prakriti<span>.</span></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#blogs">Writing</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       HERO SECTION
+       H1 = your name — the most important
+       heading on the page. One H1 only.
+  ════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span></span>
+            Available for opportunities · Pokhara, Nepal
+          </div>
+
+          <!-- H1: Your name. This is what Google reads first. -->
+          <h1>Prakriti<br /><em>Baral</em></h1>
+
+          <!-- H2-level description — your role -->
+          <p class="hero-title">SEO Content Writer &amp; Digital Marketing Specialist</p>
+
+          <p class="hero-bio">
+            I help businesses get found online — through content that's written for people and optimised for search engines. I believe the best SEO is invisible: when readers don't notice the strategy, only the value.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <!-- SVG envelope icon -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+              Get in touch
+            </a>
+            <a href="#blogs" class="btn btn-outline">View my writing ↓</a>
+          </div>
+
+          <!-- Stats row — your proof of work in numbers -->
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">15+</div>
+              <div class="stat-lbl">Published articles</div>
+            </div>
+            <div>
+              <div class="stat-num">11</div>
+              <div class="stat-lbl">GBP profiles managed</div>
+            </div>
+            <div>
+              <div class="stat-num">2</div>
+              <div class="stat-lbl">Countries · Portugal &amp; Macau</div>
+            </div>
+            <div>
+              <div class="stat-num">4</div>
+              <div class="stat-lbl">Pillars of SEO</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHOTO — replace YOUR_PHOTO.jpg with your actual image filename -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <!--
+              HOW TO ADD YOUR PHOTO:
+              1. Save your photo as "photo.jpg" in the same folder as this HTML file
+              2. Delete the div.photo-placeholder below
+              3. Uncomment the img tag below it
+            -->
+            <div class="photo-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              Add your photo here.<br />
+              Save it as photo.jpg<br />
+              in this same folder.
+            </div>
+            <!-- <img src="photo.jpg" alt="Prakriti Baral — SEO Content Writer from Pokhara Nepal" /> -->
+          </div>
+
+          <!-- Floating badge showing your current role -->
+          <div class="hero-badge">
+            <div class="badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D7A6B" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <div class="badge-text">Currently at</div>
+              <div class="badge-sub">Lumino Technology</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       ABOUT SECTION
+       H2 heading = "About Me"
+       This is where your bio lives.
+  ════════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">About Me</div>
+          <!-- H2: section heading -->
+          <h2>Simplifying the complex,<br />one search at a time</h2>
+          <p>
+            I'm Prakriti Baral, an SEO Content Writer and Digital Marketing Specialist based in Pokhara, Nepal. I got into content writing because I love taking complex ideas and making them easy enough for anyone to understand — and I quickly realised that great writing means nothing if nobody finds it. That's what led me to SEO.
+          </p>
+          <p>
+            I work across all four pillars of SEO — helping businesses rank higher and genuinely connect with their audience. During my internship at Lumino Technology, I've written SEO-optimised blog content, conducted website audits for client businesses, managed Google Business Profiles for international restaurant clients across Portugal and Macau, and independently built an AI-powered content generation tool using the Gemini API.
+          </p>
+          <p>
+            I believe the best content does two things at once — ranks on Google and genuinely helps the person reading it.
+          </p>
+
+          <!-- The four pillars — your core SEO knowledge -->
+          <div class="four-pillars">
+            <div class="pillar">
+              <div class="pillar-num">01</div>
+              <div class="pillar-name">Technical SEO</div>
+              <div class="pillar-desc">Site speed, crawlability, schema, meta tags</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-num">02</div>
+              <div class="pillar-name">On-Page SEO</div>
+              <div class="pillar-desc">Content structure, headings, keyword strategy</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-num">03</div>
+              <div class="pillar-name">Off-Page SEO</div>
+              <div class="pillar-desc">Backlinks, authority building, local citations</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-num">04</div>
+              <div class="pillar-name">Content SEO</div>
+              <div class="pillar-desc">E-E-A-T, topical clusters, search intent</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience card — your internship details -->
+        <div class="experience-card">
+          <div class="exp-company">Internship Experience</div>
+          <div class="exp-role">SEO Content Writer</div>
+          <div class="exp-period">Lumino Technology Pvt. Ltd. · 2025–2026</div>
+          <ul class="exp-list">
+            <li>Published 15+ SEO-optimised blog articles covering technical SEO, Google Core Updates, E-E-A-T, and SaaS growth strategies</li>
+            <li>Managed Google Business Profiles for 11 international restaurant clients across Portugal and Macau — including content posting, review management, and profile auditing</li>
+            <li>Conducted a full SEO audit for a client eCommerce website (Solid Power Pvt. Ltd.), identifying critical on-page issues and delivering a visual audit report</li>
+            <li>Built an AI-powered GBP content generation tool using the Gemini API — independently designed, coded, and deployed as a standalone web application</li>
+            <li>Worked with AI automation pipelines for local SEO content at scale</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SKILLS SECTION
+       H2 heading = "Skills & Tools"
+  ════════════════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">What I do</div>
+      <h2>Skills &amp; Tools</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">✍️</div>
+          <h3>SEO Content Writing</h3>
+          <p style="font-size:14px;color:var(--ink-3);">Writing content that ranks and reads naturally — blog posts, landing pages, and web copy built around search intent.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Blog Writing</span>
+            <span class="skill-tag">Copywriting</span>
+            <span class="skill-tag">Search Intent</span>
+            <span class="skill-tag">E-E-A-T</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <h3>SEO Strategy</h3>
+          <p style="font-size:14px;color:var(--ink-3);">Keyword research, on-page optimisation, technical audits, and content strategy across all four pillars of SEO.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Keyword Research</span>
+            <span class="skill-tag">On-Page SEO</span>
+            <span class="skill-tag">Technical SEO</span>
+            <span class="skill-tag">SEO Audits</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📍</div>
+          <h3>Google Business Profile</h3>
+          <p style="font-size:14px;color:var(--ink-3);">Local SEO and GBP management for international clients — content, reviews, audits, and profile optimisation.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Local SEO</span>
+            <span class="skill-tag">GBP Management</span>
+            <span class="skill-tag">Review Management</span>
+            <span class="skill-tag">Profile Auditing</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>AI Tools &amp; Automation</h3>
+          <p style="font-size:14px;color:var(--ink-3);">Built AI-powered content tools using Gemini API. Experienced with AI-assisted content workflows and automation pipelines.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">ChatGPT</span>
+            <span class="skill-tag">AI Prompting</span>
+            <span class="skill-tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>SEO Tools</h3>
+          <p style="font-size:14px;color:var(--ink-3);">Comfortable with the industry-standard tools used for research, auditing, and performance tracking.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Google Search Console</span>
+            <span class="skill-tag">Ubersuggest</span>
+            <span class="skill-tag">Yoast SEO</span>
+            <span class="skill-tag">PageSpeed Insights</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Digital Marketing</h3>
+          <p style="font-size:14px;color:var(--ink-3);">Understanding of how SEO fits into the broader digital marketing ecosystem — content strategy, social, and brand positioning.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Content Strategy</span>
+            <span class="skill-tag">Social Media</span>
+            <span class="skill-tag">Branding</span>
+            <span class="skill-tag">Analytics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       BLOGS SECTION
+       Your 6 best published articles.
+       Each card links to the live article.
+       H2 = "Published Writing"
+  ════════════════════════════════════════ -->
+  <section class="blogs section" id="blogs">
+    <div class="container">
+      <div class="blogs-header">
+        <div>
+          <div class="section-label">Published Writing</div>
+          <h2>Articles &amp; Blog Posts</h2>
+        </div>
+        <a href="https://luminotechnology.com/blog" target="_blank" class="btn btn-outline" style="flex-shrink:0;">
+          View all articles →
+        </a>
+      </div>
+      <div class="blogs-grid">
+
+        <a class="blog-card" href="https://luminotechnology.com/blog/seo-for-saas-companies-tips-and-tricks" target="_blank">
+          <div class="blog-card-top">
+            <div class="blog-date">May 8, 2026</div>
+            <h3>SEO for SaaS Companies: Tips and Tricks</h3>
+            <p>How SEO works differently for SaaS — strategies that drive signups, reduce CAC, and grow MRR.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="skill-tag">SaaS SEO</span>
+            <span class="read-link">Read article →</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://luminotechnology.com/blog/semantic-search-in-2026-why-its-the-only-seo-strategy-that-matters-now" target="_blank">
+          <div class="blog-card-top">
+            <div class="blog-date">May 4, 2026</div>
+            <h3>Semantic Search in 2026: Why It's the Only SEO Strategy That Matters Now</h3>
+            <p>Why intent-based strategies are replacing keyword stuffing for good.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="skill-tag">SEO Strategy</span>
+            <span class="read-link">Read article →</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://luminotechnology.com/blog/e-e-a-t-checklist-for-seo-improve-google-trust-signals-in-2026" target="_blank">
+          <div class="blog-card-top">
+            <div class="blog-date">Mar 12, 2026</div>
+            <h3>E-E-A-T Checklist for SEO: Improve Google Trust Signals in 2026</h3>
+            <p>A practical 13-point checklist for experience, expertise, authority, and trust.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="skill-tag">E-E-A-T</span>
+            <span class="read-link">Read article →</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://luminotechnology.com/blog/how-long-does-seo-take-to-show-results" target="_blank">
+          <div class="blog-card-top">
+            <div class="blog-date">Mar 23, 2026</div>
+            <h3>How Long Does SEO Take to Show Results in 2026?</h3>
+            <p>Honest month-by-month data on SEO timelines — what to expect and what affects it.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="skill-tag">SEO</span>
+            <span class="read-link">Read article →</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://luminotechnology.com/blog/google-search-core-updates-what-changed-and-what-to-do" target="_blank">
+          <div class="blog-card-top">
+            <div class="blog-date">Mar 16, 2026</div>
+            <h3>Google Search's Core Updates 2026 — What Changed and What to Do</h3>
+            <p>Exactly what the February 2026 Core Update changed and how to recover lost traffic.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="skill-tag">Google Updates</span>
+            <span class="read-link">Read article →</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://luminotechnology.com/blog/why-website-not-generating-leads-fixes-" target="_blank">
+          <div class="blog-card-top">
+            <div class="blog-date">Mar 13, 2026</div>
+            <h3>Why Your Website Is Not Generating Leads — 10 Fixes For 2026</h3>
+            <p>10 specific reasons websites get traffic but zero enquiries — and how to fix each one.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="skill-tag">Content SEO</span>
+            <span class="read-link">Read article →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       PROJECTS SECTION
+       Two key projects: AI tool + SEO audit
+  ════════════════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">Work &amp; Projects</div>
+      <h2>What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <div class="project-label">AI Tool · Personal Project</div>
+            <h3>GBP Content AI Agent</h3>
+            <p>
+              A fully functional AI-powered web application that generates Google Business Profile content — posts, business descriptions, SEO blog posts, and profile audits — for restaurant clients. Built independently using HTML, JavaScript, and the Gemini API. Used a 6-category content rotation strategy based on real GBP management experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML & JavaScript</span>
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">Local SEO</span>
+              <span class="tech-tag">GBP Strategy</span>
+              <span class="tech-tag">AI Prompting</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <!--
+              Once you put this on GitHub, replace # with your actual GitHub link
+            -->
+            <a href="#" class="btn btn-primary btn" style="padding:10px 20px;font-size:13px;">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <div class="project-label">SEO Audit · Client Work</div>
+            <h3>Solid Power Pvt. Ltd. — SEO Audit</h3>
+            <p>
+              A comprehensive SEO audit conducted for Solid Power Pvt. Ltd. (solidpower.com.np), an eCommerce website for Nepal's leading electronics manufacturer — built by Lumino Technology. The audit covered technical SEO, on-page analysis, keyword strategy, local SEO, content quality, and E-E-A-T signals, with priority recommendations and visual scoring.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Technical SEO</span>
+              <span class="tech-tag">On-Page SEO</span>
+              <span class="tech-tag">Keyword Strategy</span>
+              <span class="tech-tag">E-E-A-T</span>
+              <span class="tech-tag">Local SEO</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <!--
+              You can link to the audit PDF/Word doc once uploaded to GitHub
+            -->
+            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:13px;">Request audit report →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CONTACT SECTION
+       Simple, clear. Two buttons.
+  ════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-label" style="background:rgba(255,255,255,0.08);color:var(--teal-m);">Let's work together</div>
+        <h2>Have a project in mind?</h2>
+        <p>I'm open to freelance projects, collaborations, and full-time opportunities in SEO, content writing, and digital marketing.</p>
+        <div class="contact-links">
+          <a href="mailto:baralprakriti1@gmail.com" class="contact-btn contact-btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            baralprakriti1@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/prakriti-baral-467284281" target="_blank" class="contact-btn contact-btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Prakriti Baral · SEO Content Writer &amp; Digital Marketing Specialist · Pokhara, Nepal</p>
+  </footer>
+
+</body>
+</html>
