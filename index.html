@@ -35,29 +35,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(245,242,236,
 .nl{display:flex;gap:22px;align-items:center;}
 .nl a{font-size:13px;font-weight:500;color:var(--ink3);transition:color .18s;}
 .nl a:hover{color:var(--accent);}
-.edit-btn{font-family:var(--fm);font-size:11px;padding:4px 12px;border-radius:20px;border:1px solid var(--border);background:var(--bg2);color:var(--ink3);cursor:pointer;transition:all .2s;}
-.edit-btn:hover{border-color:var(--accent);color:var(--accent);}
-.edit-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);}
-.edit-panel{display:none;position:fixed;top:56px;right:0;bottom:0;width:380px;background:var(--white);border-left:1px solid var(--border);z-index:190;overflow-y:auto;padding:24px;}
-.edit-panel.open{display:block;}
-.ep-title{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--ink);margin-bottom:4px;}
-.ep-sub{font-family:var(--fm);font-size:11px;color:var(--ink4);margin-bottom:20px;}
-.ep-tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap;}
-.ep-tab{font-family:var(--fm);font-size:11px;padding:4px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--ink3);cursor:pointer;transition:all .18s;}
-.ep-tab.active{background:var(--ink);color:var(--bg);border-color:var(--ink);}
-.ep-section-label{font-family:var(--fm);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
-.ep-field{margin-bottom:12px;}
-.ep-field label{display:block;font-size:12px;color:var(--ink3);margin-bottom:4px;font-weight:500;}
-.ep-field input,.ep-field textarea{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);font-family:var(--fb);font-size:13px;color:var(--ink);outline:none;transition:border-color .18s;}
-.ep-field input:focus,.ep-field textarea:focus{border-color:var(--accent);}
-.ep-field textarea{resize:vertical;min-height:70px;}
-.ep-save{width:100%;padding:10px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-family:var(--fb);font-size:13.5px;font-weight:600;cursor:pointer;transition:background .2s;margin-top:4px;}
-.ep-save:hover{background:var(--acd);}
-.ep-add{width:100%;padding:8px;background:transparent;color:var(--sage);border:1.5px dashed var(--border);border-radius:8px;font-family:var(--fb);font-size:13px;cursor:pointer;transition:all .2s;margin-bottom:10px;}
-.ep-add:hover{border-color:var(--sage);}
-.ep-item-card{background:var(--bg2);border-radius:8px;padding:12px;margin-bottom:8px;position:relative;}
-.ep-remove{position:absolute;top:8px;right:8px;background:transparent;border:none;color:var(--ink4);font-size:18px;cursor:pointer;line-height:1;}
-.ep-remove:hover{color:var(--accent);}
 .hero{padding:140px 0 80px;min-height:100vh;display:flex;align-items:center;}
 .hg{display:grid;grid-template-columns:1fr 290px;gap:60px;align-items:center;width:100%;}
 .hbadge{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:11.5px;color:var(--ink3);background:var(--bg2);border:1px solid var(--border);padding:5px 14px;border-radius:30px;margin-bottom:26px;}
@@ -212,9 +189,8 @@ footer p{font-family:var(--fm);font-size:11.5px;color:rgba(245,242,236,.18);}
   .agrid,.pgrid,.exgrid{grid-template-columns:1fr;}
   .skgrid{grid-template-columns:1fr 1fr;}
   .hstats{gap:22px;}
-  .nl a:not(.edit-btn){display:none;}
+  .nl a{display:flex;}
   .whdr{flex-direction:column;align-items:flex-start;gap:14px;}
-  .edit-panel{width:100%;top:auto;bottom:0;height:65vh;border-left:none;border-top:1px solid var(--border);}
 }
 @media(max-width:520px){.skgrid{grid-template-columns:1fr;}}
 ::-webkit-scrollbar{width:5px;}
@@ -233,38 +209,9 @@ footer p{font-family:var(--fm);font-size:11.5px;color:rgba(245,242,236,.18);}
       <a href="#projects">Projects</a>
       <a href="#research">Research</a>
       <a href="#contact">Contact</a>
-      <button class="edit-btn" id="editToggle" onclick="toggleEdit()">✏ Edit</button>
     </div>
   </div>
 </nav>
-
-<!-- EDIT PANEL -->
-<div class="edit-panel" id="editPanel">
-  <div class="ep-title">Content editor</div>
-  <div class="ep-sub">No code. Changes apply on save.</div>
-  <div class="ep-tabs" id="epTabs">
-    <button class="ep-tab active" onclick="showTab('tab-articles')">Writing</button>
-    <button class="ep-tab" onclick="showTab('tab-research')">Research</button>
-    <button class="ep-tab" onclick="showTab('tab-projects')">Projects</button>
-  </div>
-  <div id="tab-articles">
-    <div class="ep-section-label">Articles</div>
-    <div id="articles-editor"></div>
-    <button class="ep-add" onclick="addArticle()">+ Add article</button>
-    <button class="ep-save" onclick="saveAll(event)">Save & update</button>
-  </div>
-  <div id="tab-research" style="display:none">
-    <div class="ep-section-label">Research pieces</div>
-    <div id="research-editor"></div>
-    <button class="ep-save" onclick="saveAll(event)">Save & update</button>
-  </div>
-  <div id="tab-projects" style="display:none">
-    <div class="ep-section-label">Projects</div>
-    <div id="projects-editor"></div>
-    <button class="ep-add" onclick="addProject()">+ Add project</button>
-    <button class="ep-save" onclick="saveAll(event)">Save & update</button>
-  </div>
-</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -540,53 +487,6 @@ function renderResearch(){
 function toggleRI(i){
   var el = document.getElementById('ri-'+i);
   el.classList.toggle('open');
-}
-
-function toggleEdit(){
-  var panel = document.getElementById('editPanel');
-  var btn = document.getElementById('editToggle');
-  var isOpen = panel.classList.toggle('open');
-  btn.classList.toggle('active', isOpen);
-  if(isOpen) buildEditors();
-}
-
-function showTab(id){
-  ['tab-articles','tab-research','tab-projects'].forEach(function(t){
-    document.getElementById(t).style.display = (t===id) ? 'block' : 'none';
-  });
-  document.querySelectorAll('.ep-tab').forEach(function(btn,i){
-    btn.classList.toggle('active', ['tab-articles','tab-research','tab-projects'][i]===id);
-  });
-}
-
-function buildEditors(){
-  var ae = document.getElementById('articles-editor');
-  ae.innerHTML = DATA.articles.map(function(a,i){
-    return '<div class="ep-item-card"><button class="ep-remove" onclick="removeArticle('+i+')">&times;</button><div class="ep-field"><label>Tag</label><input value="'+esc(a.tag)+'" onchange="DATA.articles['+i+'].tag=this.value"/></div><div class="ep-field"><label>Title</label><input value="'+esc(a.title)+'" onchange="DATA.articles['+i+'].title=this.value"/></div><div class="ep-field"><label>Description</label><textarea onchange="DATA.articles['+i+'].desc=this.value">'+esc(a.desc)+'</textarea></div><div class="ep-field"><label>Date</label><input value="'+esc(a.date)+'" onchange="DATA.articles['+i+'].date=this.value"/></div><div class="ep-field"><label>URL</label><input value="'+esc(a.url)+'" onchange="DATA.articles['+i+'].url=this.value"/></div></div>';
-  }).join('');
-
-  var re = document.getElementById('research-editor');
-  re.innerHTML = DATA.research.map(function(r,i){
-    return '<div class="ep-item-card"><div style="font-family:var(--fm);font-size:11px;color:var(--ink4);margin-bottom:8px;">Piece '+r.num+'</div><div class="ep-field"><label>Title</label><input value="'+esc(r.title)+'" onchange="DATA.research['+i+'].title=this.value"/></div><div class="ep-field"><label>Summary</label><textarea onchange="DATA.research['+i+'].summary=this.value">'+esc(r.summary)+'</textarea></div><div class="ep-field"><label>Core insight</label><textarea onchange="DATA.research['+i+'].insight=this.value">'+esc(r.insight)+'</textarea></div></div>';
-  }).join('');
-
-  var pe = document.getElementById('projects-editor');
-  pe.innerHTML = DATA.projects.map(function(p,i){
-    return '<div class="ep-item-card"><button class="ep-remove" onclick="removeProject('+i+')">&times;</button><div class="ep-field"><label>Label</label><input value="'+esc(p.label)+'" onchange="DATA.projects['+i+'].label=this.value"/></div><div class="ep-field"><label>Title</label><input value="'+esc(p.title)+'" onchange="DATA.projects['+i+'].title=this.value"/></div><div class="ep-field"><label>Description</label><textarea onchange="DATA.projects['+i+'].desc=this.value">'+esc(p.desc)+'</textarea></div><div class="ep-field"><label>Tags (comma separated)</label><input value="'+esc(p.tags.join(', '))+'" onchange="DATA.projects['+i+'].tags=this.value.split(\',\').map(function(t){return t.trim();})"/></div></div>';
-  }).join('');
-}
-
-function esc(str){ return String(str).replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
-function addArticle(){ DATA.articles.push({tag:"New",title:"New article",desc:"Description",date:"2026",url:"#"}); buildEditors(); }
-function removeArticle(i){ DATA.articles.splice(i,1); buildEditors(); }
-function addProject(){ DATA.projects.push({label:"Project",title:"New project",desc:"Description",tags:["Tag"],period:"2026"}); buildEditors(); }
-function removeProject(i){ DATA.projects.splice(i,1); buildEditors(); }
-
-function saveAll(e){
-  renderArticles(); renderProjects(); renderResearch();
-  var btn = e.target;
-  btn.textContent = '\u2713 Saved!';
-  setTimeout(function(){ btn.textContent = 'Save & update'; }, 1800);
 }
 
 var obs = new IntersectionObserver(function(entries){
